@@ -94,7 +94,11 @@ body{
     margin-right: 0;
 }
 
-
+.icon{
+    fill:#757575;
+    width: 300px;
+    height: 150px;
+}
 
 .contact{
    display: flex;
