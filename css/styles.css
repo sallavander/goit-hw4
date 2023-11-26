@@ -22,6 +22,7 @@ body{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .logo-link{
@@ -38,6 +39,11 @@ body{
 
 .section.team{
     background-color: #F5F4FA;
+    padding: 94px 0px;
+}
+
+.section.clients{
+    margin-top: 0;
     padding: 94px 0px;
 }
 
@@ -69,8 +75,8 @@ body{
 .link{
     font-weight: 500;
     font-size: 14px;
-    text-decoration:none;
-    color: #212121;
+    color: #AFB1B8;
+    text-decoration: none;
 }
 
 .logo-link span{
@@ -80,6 +86,10 @@ body{
 
 .nav{
     margin-left: 94px;
+}
+
+.nav .link{
+    color: #212121;
 }
 
 .site-nav.list{
@@ -95,9 +105,11 @@ body{
 }
 
 .icon{
-    fill:#757575;
-    width: 300px;
-    height: 150px;
+    fill: currentColor;
+}
+
+.contact .icon{
+    margin-right: 10px;
 }
 
 .contact{
@@ -111,6 +123,8 @@ body{
 
 .contact .link{
     color: #757575;
+    display: flex;
+    align-items: center;
 }
 
 .link:hover{
@@ -150,19 +164,33 @@ body{
 
 
 .decision-list{
-    text-align: center;
     display: flex;
     justify-content: space-between;
 }
 
 .decision-item{
     text-align: left;
-    display: inline-block;
-    vertical-align: top;
     color: #757575;
     margin-right: 30px;
     font-size: 14px;
     font-weight: 400; 
+}
+
+.decision-item>div{
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decision-item .icon{
+    width: 70px;
+    height: 70px;
+    display:block;
+
 }
 
 .decision-item:last-child{
@@ -196,8 +224,7 @@ body{
     line-height: 2;
 }
 
-.team-list li{
-    display: inline-block;
+.team-list>li{
     box-sizing: border-box;
     width: 270px;
 }
@@ -211,9 +238,47 @@ body{
     width:270px;
     margin: 0;
     background-color:#FFFFFF;
-    height: 370px;
+    height: 428px;
     border-radius: 4px;
     box-shadow: 0px 2px 4px #757575;
+}
+
+.social {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    width: inherit;
+}
+
+.social .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#AFB1B8;
+    height: 44px;
+    width: 44px;
+}
+
+.social .link:hover{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.client-list{
+    display:flex;
+    justify-content: space-between;
+}
+
+.client-list>.item{
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: solid #AFB1B8;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-list{
